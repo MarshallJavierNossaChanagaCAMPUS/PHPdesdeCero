@@ -1,0 +1,10 @@
+{
+    "users":[
+        {
+            "usuario": "Donpiola",
+            "nombre": "Marshall",
+            "edad": 20,
+            "contrasena": 123
+        }
+    ]
+}
