@@ -1,18 +1,25 @@
 {
   "users": [
     {
-      "nombre": "Marshall",
-      "edad": 20,
-      "usuario": "Donpiola",
-      "contrasena": 123,
+      "nombre": "alex",
+      "edad": "123",
+      "usuario": "josejose",
+      "contrasena": "Marshall",
+      "id": 1
+    },
+    {
+      "nombre": "asd",
+      "edad": "123",
+      "usuario": "asd",
+      "contrasena": "12",
       "id": 2
     },
     {
-      "nombre": "Base de datos",
-      "edad": "17",
-      "usuario": "Donpepe",
-      "contrasena": "235235",
-      "id": "ODCigm7"
+      "nombre": "Junior",
+      "edad": "57",
+      "usuario": "Junicua",
+      "contrasena": "123",
+      "id": 3
     }
   ]
 }

@@ -4,9 +4,15 @@
     function autoload($class){
         require 'entidad/'.$class.'.php';
     }
+
+    $_DATA = json_decode(file_get_contents("php://input"), false);
+
+    $usuario = (string) $_DATA->{"usuario"};
+    $contrasena = (string) $_DATA->{"contrasena"};
+
     spl_autoload_register('autoload');
 
-    $res = new user("Donpiola", 123);
+    $res = new user($usuario, $contrasena);
 
-    echo $res->getUsers();
+    echo json_encode($res->getUsers(), JSON_PRETTY_PRINT) ;
 ?>

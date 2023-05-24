@@ -7,7 +7,6 @@ let config = {
 };
 
 let urlDatabase = "http://localhost:3000/users";
-let urlBackend = "/home/spukM01-070/Documents/Marshall/PHPdesdeCero/entidad/user.php";
 
 formRegistro.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -20,9 +19,12 @@ formRegistro.addEventListener("submit", async (e) => {
     formRegistro.reset()
 });
 
-formLogin.addEventListener("submit", (e) => {
+formLogin.addEventListener("submit", async (e) => {
     e.preventDefault();
+    config.method = "POST";
     let data = Object.fromEntries(new FormData(e.target));
-    console.log(data);
+    config.body = JSON.stringify(data);
+    let res = await (await fetch("api.php", config)).json();
+    document.querySelector("pre").innerHTML = res;
     formLogin.reset()
 })
