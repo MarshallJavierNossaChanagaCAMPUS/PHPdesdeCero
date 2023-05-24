@@ -1,10 +1,18 @@
 {
-    "users":[
-        {
-            "usuario": "Donpiola",
-            "nombre": "Marshall",
-            "edad": 20,
-            "contrasena": 123
-        }
-    ]
+  "users": [
+    {
+      "nombre": "Marshall",
+      "edad": 20,
+      "usuario": "Donpiola",
+      "contrasena": 123,
+      "id": 2
+    },
+    {
+      "nombre": "Base de datos",
+      "edad": "17",
+      "usuario": "Donpepe",
+      "contrasena": "235235",
+      "id": "ODCigm7"
+    }
+  ]
 }
