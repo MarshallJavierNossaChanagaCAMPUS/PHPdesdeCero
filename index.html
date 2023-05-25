@@ -5,22 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
-    <form id="myFormRegistro">
-        <input type="text" name="nombre" placeholder="Ingrese su nombre:">
-        <input type="text" name="edad" placeholder="Ingrese su edad:">
-        <input type="text" name="usuario" placeholder="Ingrese su usuario:">
-        <input type="text" name="contrasena" placeholder="Ingrese la contraseña:"> <br> <br>
-        <input type="submit" value="Registrarse">
-    </form>
-    <br>
-    <form id="myFormLogin">
-        <input type="text" name="usuario" placeholder="Ingrese el  usuario:">
-        <input type="text" name="contrasena" placeholder="Ingrese la contraseña:"> <br> <br>
-        <input type="submit" value="Entrar">
-    </form>
+
+    <header>
+        <nav>
+            <div>
+                <p>Logo</p>
+            </div>
+            <div>
+                <button>Login</button>
+                <button>Register</button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="login">
+        <form id="myFormLogin">
+            <input type="text" name="usuario" placeholder="Ingrese el  usuario:">  <br> <br>
+            <input type="text" name="contrasena" placeholder="Ingrese la contraseña:"> <br> <br>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+    
+    <div class="registro">
+        <form id="myFormRegistro">
+            <input type="text" name="nombre" placeholder="Ingrese su nombre:">
+            <input type="text" name="edad" placeholder="Ingrese su edad:">
+            <input type="text" name="usuario" placeholder="Ingrese su usuario:">
+            <input type="text" name="contrasena" placeholder="Ingrese la contraseña:"> <br> <br>
+            <input type="submit" value="Registrarse">
+        </form>
+    </div>
+    
     <pre class="pre">
 
     </pre>

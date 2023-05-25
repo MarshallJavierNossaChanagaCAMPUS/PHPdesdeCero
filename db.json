@@ -1,25 +1,5 @@
 {
   "users": [
-    {
-      "nombre": "alex",
-      "edad": "123",
-      "usuario": "josejose",
-      "contrasena": "Marshall",
-      "id": 1
-    },
-    {
-      "nombre": "asd",
-      "edad": "123",
-      "usuario": "asd",
-      "contrasena": "12",
-      "id": 2
-    },
-    {
-      "nombre": "Junior",
-      "edad": "57",
-      "usuario": "Junicua",
-      "contrasena": "123",
-      "id": 3
-    }
+    
   ]
 }
