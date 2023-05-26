@@ -1,21 +1,20 @@
 <?php
     class user extends conexion{
-        static $config = array(
-            'http'=>[
-                'header'=>"Content-Type: application/json"
-            ]
-            );
         public $usuario;
         protected $contrasena;
-        public function __construct($usuario, $contrasena){
+        public $data;
+        public function __construct($usuario, $contrasena, $path){
+            parent::__construct($path);
             $this->usuario = $usuario;
             $this->contrasena = $contrasena;
+            $this->data = $this->getData()[__CLASS__];
         }
         public function getUsers(){
-            self::$config['method']['GET'];
-            $res = file_get_contents('http://localhost:3000/users?usuario='.$this->usuario.'&contrasena='.$this->contrasena, false, stream_context_create(self::$config));
-
-            return $res;
+            $listUser = array_combine(array_column($this->data, 'usuario'), array_column($this->data, "contrasena"));
+            $listIndex = array_combine(array_column($this->data, 'usuario'), array_keys($this->data));
+            return ($listUser[$this->usuario] ?? null) == $this->contrasena
+            ? $this->data[$listIndex[$this->usuario]]
+            : ["success" => "error"];
         }
     }
 ?>

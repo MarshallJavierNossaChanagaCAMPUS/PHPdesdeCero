@@ -24,7 +24,7 @@ formLogin.addEventListener("submit", async (e) => {
     config.method = "POST";
     let data = Object.fromEntries(new FormData(e.target));
     config.body = JSON.stringify(data);
-    let res = await (await fetch("api.php", config)).json();
+    let res = await (await fetch("api.php", config)).text();
     document.querySelector("pre").innerHTML = res;
     formLogin.reset()
 })

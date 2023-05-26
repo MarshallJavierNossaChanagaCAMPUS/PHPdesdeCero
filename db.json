@@ -1,5 +1,11 @@
 {
   "users": [
-    
+    {
+      "nombre": "Artemis",
+      "edad": "17",
+      "usuario": "Jose",
+      "contrasena": "235235",
+      "id": 1
+    }
   ]
 }
